@@ -8,6 +8,16 @@
     body{
         font-family: sans-serif;
     }
+    
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .container{
+        width: 80%;
+        margin: auto;
+    }
 
     .float_left{
         float: left;
@@ -15,6 +25,10 @@
 
     .float_right{
         float: right;
+    }
+
+    .flexbox{
+        display: flex;
     }
 /* fine generali */
 
@@ -44,7 +58,6 @@
         }
 
         .link_utili ul a{
-            text-decoration: none;
             color: #958a90;
             font-size: 12px;
         }
@@ -79,7 +92,6 @@
         }
 
         #menu ul a{
-            text-decoration: none;
             color: #fff;
             font-size: 12px;
             padding: 20px;
@@ -93,7 +105,89 @@
             background-color: #f1f1f1;
             color: #000;
         }
-
-
-    
 /* fine header */
+
+/* inizio jumbotron */
+    #jumbotron{
+        background-color: #0d0b26;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    #jumbotron{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #jumbotron #grafica_dragon{
+        width: 50%;
+    }
+
+    #jumbotron #grafica_dragon img{
+        width: 100%;
+        height: 600px;
+        object-fit: none;
+    }
+
+    #jumbotron .vetrina{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 600px;
+        min-width: 700px;
+        padding: 30px;
+        color: #fff;
+    }
+
+        .vetrina .software{
+            font-size: 25px;
+        }
+
+            .software .novità{
+                font-weight: bold;
+                text-transform: uppercase;
+                font-style: italic;
+            }
+
+            .software .nome_software{
+                font-weight: 100;
+            }
+
+            .software .sottotitolo{
+                font-size: 18px;
+                font-weight: 100;
+            }
+
+        .vetrina .prova_15gg{
+            margin-top: 40px;
+            border-bottom: 1px solid #958a90;
+            padding-bottom: 30px;
+        }
+
+            .prova_15gg .btn_prova{
+                border: 1px solid #fff;
+                padding: 10px;
+            }
+
+            .prova_15gg .btn_prova:hover{
+                color: #958a90;
+                border: 1px solid #958a90;
+            }
+
+            .prova_15gg img{
+                width: 100px;
+            }
+
+            .prova_15gg .valutazione{
+                align-items: center;
+                margin-left: 30px;
+            }
+
+                .valutazione span{
+                    margin-left: 20px;
+                }
+
+/* fine jumbotron */
