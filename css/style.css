@@ -35,7 +35,6 @@
 /* inizio header */
     header{
         background-color: #000;
-        height: 100px;
     }
 
     header::after{
@@ -45,7 +44,7 @@
     }
 
         .link_utili{
-            line-height: 50px;
+            margin: 20px 0px 30px 0px;
         }
 
         .link_utili ul{
@@ -54,7 +53,7 @@
 
         .link_utili li{
             display: inline;
-            padding: 10px;
+            padding: 5px;
         }
 
         .link_utili ul a{
@@ -70,47 +69,63 @@
         .link_utili ul a i{
             color: #009dfa;
             font-size: 18px;
-            padding: 0px 8px;
         }
 
         .link_utili form{
             display: inline-block;
         }
 
-        #menu .logo{
-            display: inline-block;
+
+        #menu{
+            line-height: 35px;
         }
 
-        #menu ul{
-            display: inline-block;
-            height: 36px;
-            vertical-align: middle;
-        }
+            #menu .bars{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                margin: 10px 10px;
+                font-size: 30px;
+                display: none;
+            }
 
-        #menu li{
-            display: inline;
-        }
+            #menu .logo{
+                display: inline-block;
+            }
 
-        #menu ul a{
-            color: #fff;
-            font-size: 12px;
-            padding: 20px;
-        }
+                .logo img{
+                    width: 15vw;
+                }
 
-        #menu ul a i{
-            color: #958a90;
-        }
+            #menu ul{
+                display: inline-block;
+                height: 36px;
+                vertical-align: middle;
+            }
 
-        #menu ul a:hover{
-            background-color: #f1f1f1;
-            color: #000;
-        }
+            #menu li{
+                display: inline;
+            }
+
+            #menu ul a{
+                color: #fff;
+                font-size: 12px;
+                padding: 20px;
+            }
+
+            #menu ul a i{
+                color: #958a90;
+            }
+
+            #menu ul a:hover{
+                background-color: #f1f1f1;
+                color: #000;
+            }
 /* fine header */
 
 /* inizio jumbotron */
     #jumbotron{
         background-color: #0d0b26;
-        height: 100%;
         width: 100%;
         position: relative;
     }
@@ -127,17 +142,13 @@
 
     #jumbotron #grafica_dragon img{
         width: 100%;
-        height: 600px;
+        height: 700px;
         object-fit: none;
+        object-position: right;
     }
 
     #jumbotron .vetrina{
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 50%;
-        height: 600px;
-        min-width: 700px;
+        width: 600px;
         padding: 30px;
         color: #fff;
     }
@@ -167,17 +178,21 @@
             padding-bottom: 30px;
         }
 
+            .prova_15gg .p_nascosto{
+                display: none;
+            }
+
             .prova_15gg .btn_prova{
-                border: 1px solid #fff;
+                border: 2px solid #fff;
                 padding: 10px;
             }
 
             .prova_15gg .btn_prova:hover{
                 color: #958a90;
-                border: 1px solid #958a90;
+                border: 2px solid #958a90;
             }
 
-            .prova_15gg img{
+            .prova_15gg .valutazione img{
                 width: 100px;
             }
 
@@ -190,4 +205,282 @@
                     margin-left: 20px;
                 }
 
+        .vetrina .opzioni_acquisto{
+            margin-top: 20px;
+        }
+
+            .opzioni_acquisto .box{
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+
+                .box a:hover{
+                    text-decoration: underline;
+                }
+
+            .opzioni_acquisto .offerte{
+                justify-content: space-between;
+
+            }
+
+                .offerte .piano_annuale , .offerte .unica_soluzione{
+                    border: 1px solid #958a90;
+                    height: 100px;
+                    width: 50%;
+                }
+
+                .offerte .piano_annuale{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 10px;
+                    border: 2px solid #009dfa;
+                }
+
+                .offerte .unica_soluzione{
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    text-align: center;
+                }
+
+                .offerte .unica_soluzione:hover{
+                    border: 1px solid #fff;
+                }
+
+                    .piano_annuale .suggerimento{
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: #00a8fa;
+                    }
+
+            .opzioni_acquisto .sottoscrizione{
+                margin: 20px 0px;
+            }
+
+            .opzioni_acquisto .box_acquista::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+                .opzioni_acquisto .box_acquista ul{
+                    list-style: none;
+                }
+
+                .box_acquista .prezzo{
+                    padding-right: 25px;
+                    width: 50%;
+                }
+
+                    .prezzo .costo span:first-child{
+                        font-size: 30px;
+                    }
+
+                    .prezzo .costo span:nth-child(2){
+                        font-size: 10px;
+                    }
+
+                    .prezzo .iva{
+                        font-size: 10px;
+                        margin-bottom: 20px;
+                    }
+
+                    .prezzo .btn{
+                        display: block;
+                        text-transform: uppercase;
+                        color: #fff;
+                        font-size: 20px;
+                        background-color: #009dfa;
+                        padding: 10px 30px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+
+                    .prezzo .btn:hover{
+                        filter: brightness(1.1);
+                    }
+
+                    .prezzo ul li{
+                        font-size: 12px;
+                        margin: 5px 0px;
+                    }
+
+                    .prezzo ul a:hover{
+                        text-decoration: underline;
+                    }
+    
+
+                .box_acquista .offerta_limitata{
+                    padding-left: 15px;
+                    border-left: 1px solid #958a90;
+                    width: 50%;
+                }
+
+                .box_acquista .offerta_limitata:hover li:nth-child(3){
+                    text-decoration: underline;
+                }
+
+                    .offerta_limitata ul li{
+                        margin: 5px 0px;
+                    }
+
+                    .offerta_limitata ul li:nth-child(2){
+                        font-size: 12px;
+                    }
+
+                    .offerta_limitata ul li:nth-child(3){
+                        font-size: 10px;
+                    }
 /* fine jumbotron */
+
+/* inizio notizie */
+    .notizie{
+        background-color: #00c99b;
+    }
+
+        .notizie p{
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .notizie p a{
+            color: #000;
+            text-decoration: underline;
+            font-weight: bold
+        }
+/* fine notizie */
+
+/* inizio media query */
+    @media screen and (max-width: 1200px){
+        .container{
+            width: 90%;
+        }
+
+        #jumbotron .vetrina{
+            width: calc(100vw - 40%);
+        }
+
+        #jumbotron #grafica_dragon{
+            width: 40%;
+        }
+    } 
+    @media screen and (max-width: 1000px){
+        #jumbotron .vetrina{
+            width: calc(100vw - 35%);
+        }
+
+        #jumbotron #grafica_dragon{
+            width: 35%;
+        }
+    } 
+
+    @media screen and (max-width: 770px){
+        header{
+            height: 50px;
+        }
+
+        .link_utili{
+            display: none;
+        }
+
+        #menu .logo{
+            text-align: center;
+            width: 100vw;
+            line-height: 50px;
+        }
+
+        #menu ul{
+            display: none;
+        }
+
+        #menu .bars{
+            display: inline-block;
+        }
+
+        #jumbotron #grafica_dragon{
+            float: none;
+            width: 100%;
+        }
+
+        #jumbotron #grafica_dragon img{
+            height: 300px;
+            object-position: 100% 10%;
+        }
+
+        #jumbotron .vetrina{
+            width: 100vw;
+        }
+
+        .software .novità{
+            display: block;
+            font-size: 18px;
+        }
+
+        .vetrina .prova_15gg{
+            display: inline-block;
+            border: none;
+            padding: 0px;
+        }
+
+        .prova_15gg .p_nascosto{
+            display: inline-block;
+            width: 90vw;
+            font-size: 12px;
+        }
+
+        .prova_15gg .btn_prova{
+            display: none;
+        }
+
+        .prova_15gg .valutazione img{
+            width: 70px;
+        }
+
+        .prova_15gg .valutazione{
+            font-size: 12px;
+            margin: 10px 0px ;
+        }
+
+        .opzioni_acquisto .box{
+            display: none;
+        }
+
+        .opzioni_acquisto .offerte{
+            width: 400px;
+            margin-bottom: 30px;
+        }
+
+        .opzioni_acquisto .sottoscrizione{
+            display: none;
+        }
+
+        .box_acquista .offerta_limitata{
+            display: none;
+        }
+
+        .box_acquista .prezzo{
+            width: 100%;
+        }
+
+        .opzioni_acquisto .div_nascosto{
+            border: 1px solid #958a90;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .opzioni_acquisto .div_nascosto ul{
+            list-style: none;
+        }
+
+        .opzioni_acquisto .div_nascosto ul li:nth-child(3){
+            text-decoration: underline;
+        }
+
+        .notizie p{
+            font-size: 15px;
+        }
+
+    } 
+/* fine media query */

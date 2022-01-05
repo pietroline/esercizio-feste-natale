@@ -11,6 +11,9 @@
 
     <!-- link font-awesome 5.15.4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- media query -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     
@@ -63,6 +66,10 @@
     
             <nav id="menu" class="float_left">
     
+                <div class="bars">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+
                 <div class="logo">
                     <a href="#">
                         <img src="img/logo_coreldraw.png" alt="Logo CorelDraw">
@@ -101,32 +108,122 @@
     </header>
 
     <div id="jumbotron">
-        <div class="container">
-            <div id="grafica_dragon" class="float_left">
-                <img src="img/dragon.png" alt="Dragon">
-            </div>
+        <div id="grafica_dragon" class="float_left">
+            <img src="img/dragon.png" alt="Dragon">
+        </div>
             
-            <div class="vetrina float_left">
+        <div class="vetrina float_left">
                 
-                <h1 class="software">
-                    <span class="novità">Novità</span>
-                    <span class="nome_software">CorelDRAW Graphics Suite 2021</span>
-                    <div class="sottotitolo">Software di progettazione grafica per Windows</div>
-                </h1>
+            <h1 class="software">
+                <span class="novità">Novità</span>
+                <span class="nome_software">CorelDRAW Graphics Suite 2021</span>
+                <div class="sottotitolo">Software di progettazione grafica per Windows</div>
+            </h1>
                 
-                <div class="flexbox prova_15gg">
-                    <a class="btn_prova" href="#">
-                        <span>PROVA GRATIS PER 15 GIORNI</span>   
-                        <i class="fas fa-download"></i> 
-                    </a>
+            <div class="prova_15gg flexbox">
+                <p class="p_nascosto">Accendi il tuo fuoco creativo con un software di grafica professionale, progettato per portare a compimento qualsiasi progetto.</p>
+                <a class="btn_prova" href="#">
+                    <span>PROVA GRATIS PER 15 GIORNI</span>   
+                    <i class="fas fa-download"></i> 
+                </a>
     
-                    <a class="flexbox valutazione" href="#">
-                        <img src="img/4-half-star.png" alt="valutazione">
-                        <span>(1020)</span>
+                <a class="valutazione flexbox" href="#">
+                    <img src="img/4-half-star.png" alt="valutazione">
+                    <span>(1020)</span>
+                </a>
+            </div>
+
+            <div class="opzioni_acquisto">
+                
+                <div class="box flexbox">
+                    <div class="float_left">Opzioni di acquisto</div>
+                    <div class="float_right">
+                        <a href="#">Cerchi un upgrade?</a>
+                    </div>
+                </div>
+                
+                <div class="offerte flexbox">
+
+                    <div class="piano_annuale flexbox">
+                        <span class="suggerimento">Valore ottimale</span>
+                        <span>Piano annuale</span>
+                    </div>
+                    
+                    <div class="unica_soluzione flexbox">
+                        <span>Acquista in un'unica soluzione</span>
+                    </div>
+                </div>
+
+                <p class="sottoscrizione">Effettua la sottoscrizione a soli € 29,08/me, ottieni l’ultima versione, strumenti di collaborazione e altro ancora!</p>
+
+                <div class="box_acquista">
+                    
+                    <div class="prezzo float_left">
+                        <div class="costo">
+                            <span>&euro; 349,00</span>
+                            <span>/anno</span>
+                        </div>
+                        <div class="iva">(IVA incl.)</div>
+
+                        <a class="btn" href="#">acquista ora</a>
+                   
+                        <ul>
+                            <li>
+                                <a href="#">Garanzia soddisfatti o rimborsati entro 30 gg</a>
+                            </li>
+                            <li>
+                                <a href="#">Rinnova la sottoscrizione</a>
+                            </li>
+                            <li>
+                                <a href="#">Acquisti per un’azienda di grandi dimensioni?</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="offerta_limitata float_left">
+                        <a href="#">
+                            <ul>
+                                <li>
+                                    OFFERTA A TEMPO LIMITATO
+                                </li>
+                                <li>
+                                    GRATIS Painter Essentials 8
+                                </li>
+                                <li>
+                                    Altre info
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="div_nascosto"> 
+                    <a href="#">
+                        <ul>
+                            <li>
+                                OFFERTA A TEMPO LIMITATO
+                            </li>
+                            <li>
+                                GRATIS Painter Essentials 8
+                            </li>
+                            <li>
+                                Altre info
+                            </li>
+                        </ul>
                     </a>
                 </div>
+
             </div>
         </div>
+
     </div>
+
+    <div class="notizie">
+        <p>
+            <span>È arrivato il nostro aggiornamento di ottobre 2021, in esclusiva per gli utenti di una sottoscrizione! </span>
+            <a href="#">PROVALO GRATIS</a>
+        </p>
+    </div>
+
 </body>
 </html>
