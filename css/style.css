@@ -394,52 +394,161 @@
 /* inizio main */
 
     /* inizio sezione 1 */
-            main .section_1{
-                width: 100%;
-                height: 900px;
-                background: linear-gradient(#c1594e, #963552, #761749);
-                position: relative;
+        main .section_1{
+            width: 100vw;
+            height: 900px;
+            background: linear-gradient(#c1594e, #963552, #761749);
+            position: relative;
+        }
+
+            .section_1 .testo{
+                color: #fff;
+                text-align: center;
             }
 
-                .section_1 .testo{
-                    color: #fff;
-                    text-align: center;
-                }
+            .section_1 .testo h2{
+                padding: 100px 0px 20px 0px;
+                font-weight: 300;
+                font-size: 40px;
+            }
 
-                .section_1 .testo h2{
-                    padding: 100px 0px 20px 0px;
-                }
+            .section_1 .testo p{
+                font-size: 18px;
+                line-height: 25px;
+            }
 
-                .section_1 .testo p{
-                    font-size: 18px;
-                    line-height: 25px;
-                }
+            .section_1 .img{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                width: 100%;
+                height: 519px;
+                background-image: url("../img/intro-ui.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
 
-                .section_1 .img{
-                    position: absolute;
-                    bottom: 0px;
-                    right: 0px;
-                    width: 100%;
-                    height: 519px;
-                    background-image: url("../img/intro-ui.png");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
+            .section_1 .img img{
+                width: 200px;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                filter: opacity(0.7);
+            }
 
-                .section_1 .img img{
-                    width: 200px;
-                    position: relative;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    filter: opacity(0.7);
-                }
-
-                .section_1 .img img:hover{
-                    filter: opacity(1);
-                    width: 250px;
-                }
+            .section_1 .img img:hover{
+                filter: opacity(1);
+                width: 250px;
+            }
     /* fine sezione 1 */
+
+    /* inizio sezione 2 */
+        main .section_2{
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            line-height: 25px;
+            padding: 50px 0px;
+        }
+
+            .section_2 .progetta img, .section_2 .collabora img, .section_2 .fatto img{
+                width: 150px;
+            }
+
+            .section_2 .testo h3{
+                padding: 30px 0px;
+                font-weight: 100; 
+                font-size: 30px;               
+            }
+
+            .section_2 .testo{
+                padding: 0px 30px;
+            }
+
+            .section_2 .testo p a{
+                text-decoration: underline;
+            }
+
+            .section_2 .testo p a:hover{
+                text-decoration: none;
+            }
+    /* fine sezione 2 */
+
+    /* inizio sezione 3 */
+        main .section_3{
+            background-color: #efefef;
+        }
+
+            .section_3 .container{
+                padding: 50px;
+            }
+
+            .section_3 h2{
+                font-weight: 100;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .section_3 .strumenti{
+                padding-top: 100px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .section_3 p{
+                border-top: 1px solid #958a90;
+                text-align: center;
+                padding: 20px 30px;
+            }
+
+            .section_3 .strumenti .strumento{
+                text-align: center;
+            }
+
+            .section_3 .strumenti .selezionato{
+                border-bottom: 3px solid #53a62a;
+            }
+
+            .section_3 .strumenti .strumento:hover span{
+                color: #000;
+            }
+            
+                .section_3 .strumenti .strumento img{
+                    width: 70px;
+                }
+
+                .section_3 .strumenti .strumento span{
+                    display: block;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 12px;
+                    color: #6a6666;
+                    font-weight: bold;
+                }
+            .section_3 .coreldraw_pc{
+                width: 100%;
+                border: 20px solid #000;
+                border-radius: 20px;
+            }
+
+            .section_3 .btn{
+                text-align: center;
+                margin: 40px;
+            }
+
+            .section_3 .btn a{
+                color: #fff;
+                background-color: #959595;
+                padding: 10px 15px;
+                text-transform: uppercase;
+            }
+
+            .section_3 .btn a:hover{
+                filter: brightness(1.1);
+            }
+   
+    /* fine sezione 3 */
 
 /* fine main */
 
@@ -572,6 +681,122 @@
         .notizie p{
             font-size: 15px;
         }
+
+        /* inizio section_2 */
+            main .section_2{
+                flex-direction: column;
+            }
+
+            .section_2 .container{
+                flex-direction: column;
+            }
+
+            .section_2 .progetta, .section_2 .collabora, .section_2 .fatto{
+                display: flex;
+            }
+
+            .section_2 .progetta img, .section_2 .collabora img, .section_2 .fatto img{
+                display: flex;
+                width: 100px;
+                margin: 40px;
+            }
+
+            .section_2 .testo{
+                text-align: left;
+                line-height: normal;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .section_2 .testo h3{
+                font-size: 20px; 
+                padding: 5px 0px;              
+            }
+
+            .section_2 .testo p{
+                font-size: 15px;
+            }
+        /* fine section_2 */
+
+        /* inizio sezione 3 */
+            .section_3 .strumenti{
+                flex-direction: column;
+            }
+
+            .section_3 .strumento{
+                margin: 20px 0px;
+            }
+
+            .section_3 .strumenti .selezionato{
+                border: none;
+            }
+
+            .section_3 .strumenti .strumento{
+                display: flex;
+            }
+
+            .section_3 .strumenti .item_primo{
+                order: 0;
+            }
+
+            .section_3 .strumenti .item_secondo{
+                order: 3;
+            }
+            
+            .section_3 .strumenti .item_terzo{
+                order: 4;
+            }
+            
+            .section_3 .strumenti .item_quarto{
+                order: 5;
+            }
+            
+            .section_3 .strumenti .item_quinto{
+                order: 6;
+            }
+            
+            .section_3 .strumenti .item_sesto{
+                order: 7;
+            }
+            
+            .section_3 .strumenti .item_settimo{
+                order: 8;
+            }
+            
+            .section_3 .item_ottavo{
+                order: 1;
+            }
+            
+            .section_3 .item_nono{
+                order: 2;
+            }
+
+            .section_3 p{
+                border: none;
+                padding: 0;
+            }
+
+            .section_3 .strumenti .strumento img{
+                width: 40px;
+            }
+
+            .section_3 .strumenti .strumento span{
+                font-weight: 100;
+                font-size: 25px;
+            }
+
+            .section_3 .strumenti .strumento{
+                text-align: left;
+            }
+
+
+            .section_3 .coreldraw_pc{
+                border: none;
+            }
+            
+            
+        /* fine sezione 3 */
 
     } 
 /* fine media query */
