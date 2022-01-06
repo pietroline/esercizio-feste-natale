@@ -550,6 +550,90 @@
    
     /* fine sezione 3 */
 
+    /* inizio sezione 4 */
+        .section_4 .container:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .section_4 .dettagli{
+            width: 30%;
+        }
+
+        .section_4 .dettagli h2{
+            font-weight: 100;
+            font-size: 30px;
+            margin-top: 100px;
+        }
+
+        .section_4 .dettagli p{
+            margin: 20px 0px 40px 0px;
+        }
+
+        .section_4  .dettagli .sottosezione > .paragrafo{
+            border-top: 1px solid #909090;
+            padding: 10px 0px;
+            font-size: 12px;
+        }
+
+        .section_4  .dettagli .sottosezione > .paragrafo:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .section_4  .dettagli .sottosezione > .paragrafo.ultimo{
+            border-bottom: 1px solid #909090;  
+            margin-bottom: 50px;
+        }
+
+            .section_4 .sottosezione > .paragrafo > a{
+                color: #000;
+            }
+
+            .section_4 .paragrafo a:hover span.titolo{
+                text-decoration: underline;
+            }
+
+            .section_4 .sottosezione > .paragrafo > a > i{
+                padding-right: 5px;
+                font-size: 20px;
+            }
+
+            .section_4 .sottosezione > .paragrafo .chiudi{
+                display: none;
+            }
+
+            .section_4 .sottosezione > .paragrafo > .nascosto{
+                display: none;
+            }
+
+            .section_4 .sottosezione > .paragrafo:hover > .nascosto{
+                display: block;
+                padding: 10px 30px 10px 0px;
+            }
+
+            .section_4 .sottosezione > .paragrafo:hover .apri{
+                display: none;
+            }
+
+            .section_4 .sottosezione > .paragrafo:hover .chiudi{
+                display: block;
+            }
+
+        .section_4 .img{
+            width: 70%;
+        }   
+
+        .section_4 .img img{
+            padding: 150px 0px 150px 100px;
+            width: 100%;
+        }
+
+
+    /* fine sezione 4 */
+
 /* fine main */
 
 /* inizio media query */
@@ -563,7 +647,7 @@
         }
 
         #jumbotron #grafica_dragon{
-            width: 40%;
+            width: 30%;
         }
     } 
     @media screen and (max-width: 1000px){
@@ -572,8 +656,24 @@
         }
 
         #jumbotron #grafica_dragon{
-            width: 35%;
+            width: 30%;
         }
+
+        /* inizio sezione 4 */
+            .section_4 .img{
+                float: none;
+                width: 100%;
+            }
+
+            .section_4 .img img{
+                padding: 100px 0px 0px 0px;
+            }
+
+            .section_4 .dettagli{
+                float: none;
+                width: 100%;
+            }
+        /* fine sezione 4 */
     } 
 
     @media screen and (max-width: 770px){
