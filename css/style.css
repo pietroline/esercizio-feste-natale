@@ -6,7 +6,7 @@
     }
 
     body{
-        font-family: sans-serif;
+        font-family: Helvetica, sans-serif;
     }
     
     a{
@@ -635,32 +635,147 @@
     /* fine sezione 4 */
 
     /* inizio sezione 5 */
-        .section_5 .container{
+        main .section_5 .container{
             padding: 80px 0px 50px 0px;
         }
 
-        .section_5 h2{
-            font-weight: 100;
-            font-size: 30px;
-            text-align: center;
-            padding: 20px 0px;
-        }
+            .section_5 h2{
+                font-weight: 100;
+                font-size: 30px;
+                text-align: center;
+                padding: 20px 0px;
+            }
 
-        .section_5 .sottotitolo{
-            font-size: 20px;
-            text-align: center;
-            width: 60%;
-            margin: auto;
-            padding-bottom: 40px;
-        }
+            .section_5 .sottotitolo{
+                font-size: 20px;
+                text-align: center;
+                width: 60%;
+                margin: auto;
+                padding-bottom: 40px;
+            }
 
-        .section_5 .contenitore img{
-            width: 100%;
-            /* width: 25%; */
-            padding: 20px 20px;
-        }
+            .section_5 .contenitore img{
+                width: 100%;
+                /* width: 25%; */
+                padding: 20px 20px;
+            }
     /* fine sezione 5 */
 
+    /* inizio sezione 6 */
+        main .section_6{
+            background: linear-gradient(to right,#ffd24e, #ffa645, #ff7d3d);
+        }
+
+        .section_6 .container.primo{
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+            height: 250px;
+        }
+
+        .section_6 .prev i, .section_6 .next i{
+            font-size: 50px;
+        }
+
+        .section_6 .slide_1, .section_6 .slide_2, .section_6 .slide_3{
+            text-align: center;
+            color: #000;
+            font-weight: bold;
+            font-size: 30px;
+            width: 70%;
+        }
+
+        .section_6 .autore{
+            font-weight: 100;
+            padding-top: 20px;
+        }
+
+        .section_6 .slide_1, .section_6 .slide_3{
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .section_6 .container.primo:hover .slide_2{
+            display: none;
+        }
+
+        .section_6 .container.primo:hover .prev:hover .slide_1{
+           display: block;
+        }
+
+        .section_6 .container.primo:hover .next:hover .slide_3{
+            display: block;
+        }
+
+        .section_6 .container.secondo{
+            text-align: center;
+            padding-bottom: 80px;
+        }
+
+        .section_6 .container.secondo img{
+            width: 60px;
+        }
+
+        .section_6 .container.secondo .recensioni{
+            margin: 10px;
+        }
+
+        .section_6 .container.secondo .recensioni a{
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .section_6 .container.secondo .contenuto{
+            display: inline-block;
+        }
+
+        .section_6 .container.secondo .contenuto:hover a{
+            text-decoration: none;
+        }
+    /* fine sezione 6 */
+
+    /* inizio sezione 7 */
+        main .section_7 .container{
+            padding: 80px 0px 50px 0px;
+        }
+
+            .section_7 h2{
+                font-weight: 100;
+                font-size: 50px;
+                text-align: center;
+                padding: 20px 0px;
+            }
+
+            .section_7 .sottotitolo{
+                font-size: 20px;
+                text-align: center;
+                padding-bottom: 40px;
+            }
+
+            .section_7 .contenitore{
+                flex-direction: column;
+            }
+
+            .section_7 .contenitore .contenuto{
+                padding: 50px;
+                text-align: center;
+            }
+
+            .section_7 .contenuto img{
+                width: 100%;
+                /* width: 25%; */
+                padding: 20px 20px;
+            }
+
+            .section_7 .contenuto h4{
+               font-weight: 100;
+            }
+
+    /* fine sezione 7 */
 /* fine main */
 
 /* inizio media query */
@@ -932,5 +1047,15 @@
             width: 50%;
         }
         /* fine sezione 5 */
+
+        /* inizio sezione 7 */
+        .section_7 .contenitore .riga{
+            flex-wrap: wrap;
+        }
+
+        .section_7 .contenuto{
+            width: 50%;
+        }
+        /* fine sezione 7 */
     } 
 /* fine media query */
