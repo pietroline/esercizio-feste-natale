@@ -634,6 +634,33 @@
 
     /* fine sezione 4 */
 
+    /* inizio sezione 5 */
+        .section_5 .container{
+            padding: 80px 0px 50px 0px;
+        }
+
+        .section_5 h2{
+            font-weight: 100;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        .section_5 .sottotitolo{
+            font-size: 20px;
+            text-align: center;
+            width: 60%;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+
+        .section_5 .contenitore img{
+            width: 100%;
+            /* width: 25%; */
+            padding: 20px 20px;
+        }
+    /* fine sezione 5 */
+
 /* fine main */
 
 /* inizio media query */
@@ -893,10 +920,17 @@
 
             .section_3 .coreldraw_pc{
                 border: none;
-            }
-            
-            
+            }     
         /* fine sezione 3 */
 
+        /* inizio sezione 5 */
+        .section_5 .contenitore .riga{
+            flex-wrap: wrap;
+        }
+
+        .section_5 .contenitore img{
+            width: 50%;
+        }
+        /* fine sezione 5 */
     } 
 /* fine media query */
