@@ -778,6 +778,110 @@
     /* fine sezione 7 */
 /* fine main */
 
+/* inizio footer */
+    
+    /* inizio link */
+        footer .link{
+            background-color: #ececec;
+            padding: 50px 20px;
+        }
+
+            .link .prodotti, .link .collegamenti, .link .supporto, .link .informazioni{
+                width: 25%;
+            }
+
+            .link ul{
+                list-style: none;
+            }
+
+            .link li{
+                padding-right: 40px;
+                padding: 5px 0px;
+                font-size: 12px;
+            }
+
+            .link li:first-child{
+                padding-bottom: 15px;
+                font-size: 15px;
+            }
+
+            .link a{
+                color: #958a90;
+            }
+
+            .link a:hover{
+                text-decoration: underline;
+                color: #424242;
+            }
+
+                .link .informazioni .social{
+                    flex-direction: column;
+                    padding-top: 20px;
+                }
+
+                    .social .riga{
+                        padding-top: 10px;
+                    }
+
+                    .social .riga .img{
+                        padding: 5px;
+                    }
+
+            
+    /* fine link */
+
+    /* inizio informative */
+        footer .informative{
+            background-color: #1e1e1e;
+        }
+
+        footer .informative::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+            .informative .loghi{
+                padding: 20px 0px 30px 30px;
+            }
+
+            .informative .loghi img:nth-child(2){
+                width: 100px;
+                padding-left: 20px;
+            }
+
+        footer .contenitore{
+            margin: 20px 20px 30px 0px;
+        }
+
+            footer .contenitore ul{
+                list-style: none;
+                text-align: right;
+            }
+
+            footer .contenitore li{
+                display: inline;
+                padding-left: 10px;
+            }
+
+            footer .contenitore li:hover a{
+                text-decoration: underline;
+                color: #fff;
+            }
+
+            footer .contenitore a{
+                color: #958a90;
+            }
+
+            footer .contenitore .copyright{
+                color: #fff;
+                padding-top: 10px;
+            }
+            
+    /* fine informative */
+
+/* fine footer */
+
 /* inizio media query */
     @media screen and (max-width: 1200px){
         .container{
@@ -1057,5 +1161,52 @@
             width: 50%;
         }
         /* fine sezione 7 */
+
+        /* inizio footer */
+
+            footer .link{
+                display: block;
+            }
+
+                .link .prodotti, .link .collegamenti, .link .supporto, .link .informazioni{
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
+                .link li{
+                    font-size: 20px;
+                    padding: 8px 0px;
+                }
+
+                .link li:first-child{
+                    font-size: 20px;
+                }
+
+                .link .informazioni .social{
+                    display: block;
+                }
+
+            .informative .loghi{
+                float: none;
+                padding-bottom: 0px;
+            }
+
+            .informative .contenitore{
+                float: none;
+            }   
+
+                footer .contenitore ul{
+                    text-align: initial;
+                }
+
+            footer .contenitore .copyright{
+                display: inline-block;
+            }
+
+            footer .contenitore .utente{
+                display: inline-block;
+                padding-right: 10px;
+            }
+        /* fine footer */
     } 
 /* fine media query */
