@@ -471,6 +471,10 @@
 /* inizio nav master */
         .nav_master{
             background-color: #e6e6e6;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            z-index: 999;
         }
 
         .nav_master a{
@@ -483,11 +487,11 @@
 
             .nav_master ul li{
                 display: inline-block;
-                line-height: 63px;
+                line-height: 60px;
             }
 
             .nav_master ul a{
-                padding: 20px;
+                padding: 20px 20px 23px 20px;
             }
 
             .nav_master ul a:hover{
@@ -496,6 +500,10 @@
 
             .nav_master ul li:first-child{
                 border-bottom: 3px solid #000;
+            }
+
+            .nav_master ul li:first-child a{
+                padding: 20px;
             }
 /* fine nav master */
 
