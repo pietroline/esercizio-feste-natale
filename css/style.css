@@ -471,6 +471,7 @@
 /* inizio nav master */
         .nav_master{
             background-color: #e6e6e6;
+            position: -webkit-sticky;
             position: sticky;
             top: 0px;
             width: 100%;
