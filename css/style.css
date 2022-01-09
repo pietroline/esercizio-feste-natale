@@ -6,7 +6,7 @@
     }
 
     body{
-        font-family: Helvetica, sans-serif;
+        font-family: sans-serif;
         background-color: green;
     }
     
@@ -502,6 +502,9 @@
 
 /* inizio main */
 
+    main{
+        font-family: Helvetica, sans-serif;
+    }
     /* inizio sezione 1 */
         main .section_1{
             width: 100vw;
