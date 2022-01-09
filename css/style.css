@@ -45,6 +45,9 @@
 
         .link_utili{
             margin: 20px 0px 30px 0px;
+            width: 100%;
+            text-align: right;
+
         }
 
         .link_utili ul{
