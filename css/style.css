@@ -7,6 +7,7 @@
 
     body{
         font-family: Helvetica, sans-serif;
+        background-color: green;
     }
     
     a{
@@ -78,11 +79,6 @@
             display: inline-block;
         }
 
-
-        #menu{
-            line-height: 35px;
-        }
-
             #menu .bars{
                 position: absolute;
                 top: 0px;
@@ -96,14 +92,11 @@
                 display: inline-block;
             }
 
-                .logo img{
-                    width: 15vw;
-                }
-
             #menu ul{
                 display: inline-block;
                 height: 36px;
                 vertical-align: middle;
+                position: relative;
             }
 
             #menu li{
@@ -124,6 +117,119 @@
                 background-color: #f1f1f1;
                 color: #000;
             }
+
+            #menu .hover_in{
+                display: none;
+                position: absolute;
+                top: 35px;
+                left: 0px;
+                z-index: 99;
+            }
+
+            #menu .apprendimento{
+                position: relative;
+            }
+
+            #menu .supporto{
+                position: relative;
+            }
+
+                #menu .hover_in li{
+                    background-color: rgb(233, 233, 233);
+                }
+
+                #menu .hover_in a{
+                    color: #000;
+                    padding: 20px;
+                    display: inline-block;
+                    width: 150px;
+                }
+
+                #menu .hover_in li:hover{
+                    background-color: #f1f1f1;
+                }
+
+                #menu .hover_in li{
+                    display: block;
+                }
+                
+                #menu .hover_in li i{
+                    padding-right: 10px;
+                }
+
+                #menu .prodotti:hover .hover_in{
+                    display: inline-block;
+                }
+
+                    #menu .hover_in_secondo{
+                        display: none;
+                    }
+
+                        #menu .hover_in_secondo a{
+                            width: 300px;
+                        }
+                        
+                        #menu .licenze .hover_in_secondo a{
+                            width: 430px;
+                        } 
+
+                        #menu .hover_in_secondo .app_store{
+                            text-transform: uppercase;
+                            color: #958a90;
+                            border-top: 1px solid #958a90;
+                        }
+
+                        #menu .hover_in_secondo .app_store a{
+                            color: #958a90;
+                        }
+
+                    #menu .grafica_creativa .hover_in_secondo{
+                        position: absolute;
+                        top: 0px;
+                        left: 166px;
+                    }
+
+                    #menu .grafica_tecnica .hover_in_secondo{
+                        position: absolute;
+                        top: 54px;
+                        left: 166px;
+                    }
+
+                    #menu .licenze .hover_in_secondo{
+                        position: absolute;
+                        top: 108px;
+                        left: 166px;
+                    }
+
+                    #menu .grafica_creativa:hover .hover_in_secondo{
+                        display: inline-block;
+                    }
+
+                    #menu .grafica_tecnica:hover .hover_in_secondo{
+                        display: inline-block;
+                    }
+
+                    #menu .licenze:hover .hover_in_secondo{
+                        display: inline-block;
+                    }
+
+                    #menu .apprendimento .hover_in a{
+                        width: 200px;
+                    }
+
+                    #menu .supporto .hover_in a{
+                        width: 200px;
+                    }
+
+                    #menu .apprendimento:hover .hover_in{
+                        display: inline-block;
+                    }
+
+                    #menu .supporto:hover .hover_in{
+                        display: inline-block;
+                    }
+                   
+            
 /* fine header */
 
 /* inizio jumbotron */
